@@ -1,0 +1,113 @@
+commit dc3a5426ee5a6cda688c537518655d2eff324c23
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 22:07:44 2021 +0200
+
+    poisto ja nimenmuutos
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 9518cd17d4b3ca6f1886572f40540e8eb3be228d
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 22:04:35 2021 +0200
+
+    tiedostoja-kansio
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b39215627b3a7986edf3727d7534d59fe77f0b48
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 22:00:47 2021 +0200
+
+    muutoksia eka ja kolmas
+
+ eka.txt    | 2 +-
+ kolmas.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 15cb977ee6ac0537b15ff7694e98a6f5903c0584
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:58:20 2021 +0200
+
+    nimenmuutos
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2c7bdcbe779537ab6ad17ea502910b6bb5b7585b
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:57:23 2021 +0200
+
+    toinen poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 55edd794def91381d7c05412f94f77bcc9b3f6dd
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:55:50 2021 +0200
+
+    muutoksia tiedosto.txt
+
+ tiedosto.txt | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+
+commit 29a7318ee8823b51b198cb247be17e21dbff0dfa
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:54:50 2021 +0200
+
+    paljon tekstiä
+
+ tiedosto.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit d50792d3512ab8cbbf419e48fb8420846b02fdc5
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:53:45 2021 +0200
+
+    kansio ja tiedosto
+
+ stuff/jee.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f41737370fd1ba67971191ab9afe75c41e1c036d
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:52:35 2021 +0200
+
+    muutoksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit ea659201828a4c725c1d56fece03e85a661d15c3
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:51:33 2021 +0200
+
+    kolmas.txt lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1dfbe15a7a923722bcd7291c09f88aa0961594b3
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:50:34 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit cc7b48bcee3bff1516d879026e63d1c7916b80af
+Author: Mikko Pellinen <mikko.pellinen@helsinki.fi>
+Date:   Mon Mar 22 21:48:37 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
