@@ -3,4 +3,4 @@
 päivä | aika | mitä tein
 ------|------|------------
 30.3.| 2 | alustava suunnittelu, vaatimusmäärittely
-yht. | 2 |
+**yht.** | 2 |
