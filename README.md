@@ -1,15 +1,6 @@
-## Tehtävät
-### Viikko 1
+## TSP solver
 
-[gitlog.txt](https://github.com/mikkope123/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/mikkope123/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-### Viikko 2
-
-[testikattavuus.png](https://github.com/mikkope123/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
-
-## Harjoitustyö
+Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yksi kerrallaan siten Nearest neighbor -algoritmilla, eli valitsemalla viimeiseksi vierailusta kaupungista lähimpänä oleva kaupunki seuraavaksi reitille.
 
 ### Dokumentaatio
 
@@ -17,4 +8,36 @@
 
 [työaikakirjanpito](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
+## Asennus
 
+1. asenna riippuvuudet komennolla
+
+poetry install
+
+2. suorita vaadittavat alustustoimenpiteet komennolla
+
+poetry run invoke build
+
+3. aja sovellus komennolla
+
+poetry run invoke start
+
+## Komentorivitoiminnot
+
+### Sovelluksen suorittaminen
+
+Sovelluksen voi suorittaa komennolla
+
+poetry run invoke start
+
+### Testaus
+
+Testit voi suorittaa komennolla
+
+poetry run invoke test
+
+### Testikattavuus
+
+Testikattavuusraportin voi luoda komennolla
+
+poetry run invoke coverage-report
