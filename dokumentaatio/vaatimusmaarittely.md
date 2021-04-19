@@ -16,8 +16,8 @@ Alustavasti sovelluksessa on tarkoitus olla kaksi tai kolme näkymää. Syöttö
 
 * Syötteen voi antaa manuaalisesti yksittäisiä koordinaatteja syöttämällä tai antamalla koordinaatistot tiedostossa
 * Tulos esitetään graafisesti
-* Tulos tallennetaan tiedostoon.
-* Koordinaattien etäisyys lasketaan [euklidisena etäisyytenä](https://fi.wikipedia.org/wiki/Euklidinen_metriikka).
+* Tulos tallennetaan tiedostoon. **tehty**
+* Koordinaattien etäisyys lasketaan [euklidisena etäisyytenä](https://fi.wikipedia.org/wiki/Euklidinen_metriikka). **tehty**
 
 
 ### Jatkokehitysideoita

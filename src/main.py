@@ -1,15 +1,13 @@
 from city.city import City
 from solver.solver import Route
-        
+
 result_file = "src/results/route"
-
-
 
 cities = []
 with open("src/data/data.txt") as data:
     for line in data:
         raw_split = line.split()
-        cities.append( City(float(raw_split[0]), float(raw_split[1]) ) )
+        cities.append(City(float(raw_split[0]), float(raw_split[1])))
 route = Route()
 for city in cities:
     route.add_city(city)

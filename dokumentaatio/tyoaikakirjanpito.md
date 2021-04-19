@@ -6,4 +6,5 @@ päivä | aika | mitä tein
 12.4.| 2 | aloitettu harjoitustyön ohjelmointi
 13.4.| 3 | harjoitustyön runko valmiiksi, poetry- ja pytest-alustukset
 18.4.| 1 | koodin hajauttamista, tulosten printtaus tiedostoihin
+19.4.| 1 | testien kirjoittamista
 **yht.** | 8 |

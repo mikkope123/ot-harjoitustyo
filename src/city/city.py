@@ -6,11 +6,11 @@ class City:
         self.__x2 = x2
 
     def __str__(self):
-        city_tuple = ( (self.__x1, self.__x2) )
+        city_tuple = (self.__x1, self.__x2)
         return str(city_tuple)
 
     def distance(self, other):
-        return math.sqrt( (self.__x1-other.__x1)**2 + (self.__x2-other.__x2)**2 )
+        return math.sqrt((self.__x1-other.__x1)**2 + (self.__x2-other.__x2)**2)
 
     def find_nearest(self, other_cities):
         nearest_city = None
