@@ -62,6 +62,6 @@ Koodin laatukriteerit on määrätty tiedostossa .pylintrc.
 
 ## Syötteet ja tulosteet
 
-Sovellus lukee syötteen tiedostosta /src/data/data.txt. Tiedostossa on koordinaatit jokaiselle reitin kaupungille omalla rivillään. Tällä hetkellä ohjelma ei vielä tarkasta tiedoston oikeaa muotoa.
+Sovellus lukee syötteen tiedostosta /data/data.txt. Tiedostossa on koordinaatit jokaiselle reitin kaupungille omalla rivillään. Tällä hetkellä ohjelma ei vielä tarkasta tiedoston oikeaa muotoa.
 
 Sovellus tulostaa ratkaistun reitin sekä terminaaliin, että kahteen tiedostoon, jotka sijaitsevat /results-kansiossa. Tekstitiedosto route sisältää kaupunkien koordinaatit siinä järjestyksessä kuin niissä ratkaistussa reitissä vieraillaan, palaten takaisin lähtökaupunkiin. Kuvatiedosto route.png sisältää graafisen esityksen reitistä.

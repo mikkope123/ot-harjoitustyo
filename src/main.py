@@ -4,7 +4,7 @@ from solver.solver import Route
 result_file = "results/route"
 
 cities = []
-with open("src/data/data.txt") as data:
+with open("data/data.txt") as data:
     for line in data:
         raw_split = line.split()
         cities.append(City(float(raw_split[0]), float(raw_split[1])))
