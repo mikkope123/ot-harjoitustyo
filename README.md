@@ -14,11 +14,7 @@ Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yks
 
 poetry install
 
-2. suorita vaadittavat alustustoimenpiteet komennolla
-
-poetry run invoke build
-
-3. aja sovellus komennolla
+2. aja sovellus komennolla
 
 poetry run invoke start
 

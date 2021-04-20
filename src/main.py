@@ -1,7 +1,7 @@
 from city.city import City
 from solver.solver import Route
 
-result_file = "src/results/route"
+result_file = "results/route"
 
 cities = []
 with open("src/data/data.txt") as data:
@@ -14,10 +14,11 @@ for city in cities:
 
 #new_city=cities[0]
 
-print("print cities")
+print("Cities to visit:")
 route.print_cities()
 print()
 route.solve()
 route.print_route()
 route.print_to_file(result_file)
 route.plot()
+print("Solution printed to the file "+ str(result_file))

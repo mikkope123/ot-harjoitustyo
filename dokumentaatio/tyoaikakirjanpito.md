@@ -7,4 +7,5 @@ päivä | aika | mitä tein
 13.4.| 3 | harjoitustyön runko valmiiksi, poetry- ja pytest-alustukset
 18.4.| 1 | koodin hajauttamista, tulosten printtaus tiedostoihin
 19.4.| 1 | testien kirjoittamista
+20.4.| 2 | yhteensopivuuden varmistaminen Python 3.6:n kanssa, alustava arkkitehtuurikuvaus
 **yht.** | 8 |

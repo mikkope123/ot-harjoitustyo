@@ -1,12 +1,7 @@
 from city.city import City
 import matplotlib.pyplot as plt
 
-            
-""""
-class Solver:
-    def __init__(self):
-        pass
-"""
+
 
 class Route:
     def __init__(self):
@@ -28,7 +23,7 @@ class Route:
         print("Solved route:")
         for city in self.__route:
             print(city)
-        print("Route length:", self.__route_length)
+        print(f"Route length: {self.__route_length:.2f} units")
 
     def print_to_file(self, filename):
         f = open(filename, "w")
@@ -64,4 +59,4 @@ class Route:
             y.append(coordinates[1])
         
         plt.plot(x,y)
-        plt.savefig("src/results/route.png")
+        plt.savefig("results/route.png")
