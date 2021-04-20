@@ -1,4 +1,4 @@
-## TSP solver
+# TSP solver
 
 Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yksi kerrallaan siten Nearest neighbor -algoritmilla, eli valitsemalla viimeiseksi vierailusta kaupungista lähimpänä oleva kaupunki seuraavaksi reitille.
 
@@ -39,3 +39,9 @@ poetry run invoke test
 Testikattavuusraportin voi luoda komennolla
 
 poetry run invoke coverage-report
+
+## Syötteet ja tulosteet
+
+Sovellus lukee syötteen tiedostosta /src/data/data.txt. Tiedostossa on koordinaatit jokaiselle reitin kaupungille omalla rivillään. Tällä hetkellä ohjelma ei vielä tarkasta tiedoston oikeaa muotoa.
+
+Sovellus tulostaa ratkaistun reitin sekä terminaaliin, että kahteen tiedostoon, jotka sijaitsevat /results-kansiossa. Tekstitiedosto route sisältää kaupunkien koordinaatit siinä järjestyksessä kuin niissä ratkaistussa reitissä vieraillaan, palaten takaisin lähtökaupunkiin. Kuvatiedosto route.png sisältää graafisen esityksen reitistä.

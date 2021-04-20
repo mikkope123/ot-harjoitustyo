@@ -1,10 +1,11 @@
 /laskarit/viikko2/unicafe/py_test_cache
 /laskarit/viikko2/unicafe/src/__pycache__/
-/laskarit/viikko2/unicafe/src/tests/__pycache__/
-/laskarit/viikko2/unicafe/src/solver/__pycache__/
-/laskarit/viikko2/unicafe/src/city/__pycache__/
 /laskarit/viikko2/unicafe/.coverage
 /laskarit/viikko2/unicafe/htmlcov
+/laskarit/viikko2/unicafe/src/tests/__pycache__/
+/src/city/__pycache__/
+/src/solver/__pycache__/
+/src/tests/__pycache__/
 /htmlcov/
 /src/__pycache__/
 .coverage
