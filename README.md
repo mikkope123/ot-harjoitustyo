@@ -14,11 +14,15 @@ Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yks
 
 1. asenna riippuvuudet komennolla
 
+```bash
 poetry install
+```
 
 2. aja sovellus komennolla
 
+```bash
 poetry run invoke start
+```
 
 ## Komentorivitoiminnot
 
@@ -26,25 +30,33 @@ poetry run invoke start
 
 Sovelluksen voi suorittaa komennolla
 
+```bash
 poetry run invoke start
+```
 
 ### Testaus
 
 Testit voi suorittaa komennolla
 
+```bash
 poetry run invoke test
+```
 
 ### Testikattavuus
 
-Testikattavuusraportin voi luoda komennolla
+Testikattavuusraportin voi luoda komennolla:
 
+```bash
 poetry run invoke coverage-report
+```
 
 ### Pylint
 
 Koodin laaduntarkistuksen voi suorittaa komennolla:
 
+```bash
 poetry run invoke lint
+```
 
 Koodin laatukriteerit on määrätty tiedostossa .pylintrc.
 
