@@ -1,7 +1,5 @@
-from city.city import City
 import matplotlib.pyplot as plt
-
-
+from city.city import City
 
 class Route:
     def __init__(self):
@@ -31,7 +29,7 @@ class Route:
             coordinates = city.get_coordinates()
             coordinate_string = str(coordinates[0]) + " " + str(coordinates[1]) + "\n"
             f.write(str(coordinate_string))
-        f.close
+        f.close()
 
     def solve(self):
         #choose a starting city
@@ -45,7 +43,7 @@ class Route:
             self.__route_length += dist #add this to add_to_route
             self.__cities.remove(next) #ditto
             current = next
-        self.add_to_route(first) 
+        self.add_to_route(first)
         self.__route_length += current.distance(first) #what if only one city
 
 
@@ -57,6 +55,5 @@ class Route:
             coordinates = city.get_coordinates()
             x.append(coordinates[0])
             y.append(coordinates[1])
-        
         plt.plot(x,y)
         plt.savefig("results/route.png")

@@ -12,13 +12,13 @@ Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yks
 
 ## Asennus
 
-1. asenna riippuvuudet komennolla
+1. Asenna riippuvuudet komennolla:
 
 ```bash
 poetry install
 ```
 
-2. aja sovellus komennolla
+2. Aja sovellus komennolla:
 
 ```bash
 poetry run invoke start
@@ -28,7 +28,7 @@ poetry run invoke start
 
 ### Sovelluksen suorittaminen
 
-Sovelluksen voi suorittaa komennolla
+Sovelluksen voi suorittaa komennolla:
 
 ```bash
 poetry run invoke start
@@ -36,7 +36,7 @@ poetry run invoke start
 
 ### Testaus
 
-Testit voi suorittaa komennolla
+Testit voi suorittaa komennolla:
 
 ```bash
 poetry run invoke test
