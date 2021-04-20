@@ -40,6 +40,14 @@ Testikattavuusraportin voi luoda komennolla
 
 poetry run invoke coverage-report
 
+### Pylint
+
+Koodin laaduntarkistuksen voi suorittaa komennolla:
+
+poetry run invoke lint
+
+Koodin laatukriteerit on määrätty tiedostossa .pylintrc.
+
 ## Syötteet ja tulosteet
 
 Sovellus lukee syötteen tiedostosta /src/data/data.txt. Tiedostossa on koordinaatit jokaiselle reitin kaupungille omalla rivillään. Tällä hetkellä ohjelma ei vielä tarkasta tiedoston oikeaa muotoa.
