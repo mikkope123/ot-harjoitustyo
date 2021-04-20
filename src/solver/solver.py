@@ -9,9 +9,11 @@ class Route:
 
     def add_city(self, city: City):
         self.__cities.append(city)
+        return True
 
     def add_to_route(self, city: City):
         self.__route.append(city)
+        return True
 
     def print_cities(self):
         for city in self.__cities:
@@ -45,6 +47,7 @@ class Route:
             current = next
         self.add_to_route(first)
         self.__route_length += current.distance(first) #what if only one city
+        return self.__route_length
 
 
 
