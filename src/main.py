@@ -12,8 +12,6 @@ route = Route()
 for city in cities:
     route.add_city(city)
 
-#new_city=cities[0]
-
 print("Cities to visit:")
 route.print_cities()
 print()
