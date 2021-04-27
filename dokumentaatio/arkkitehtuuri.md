@@ -8,4 +8,4 @@
 
 Sekvenssikaavio kuvaa nykyistä kaupunkia (city1) lähimpänä olevan kaupungin lisäämistä reitille seuraavaksi.
 
-![Sekvenssikaavio](./kuvat/luokkakaavio.png)
+![Sekvenssikaavio](./kuvat/sekvenssikaavio.png)
