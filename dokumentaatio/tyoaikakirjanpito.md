@@ -9,4 +9,5 @@ päivä | aika | mitä tein
 19.4.| 1 | testien kirjoittamista
 20.4.| 4 | yhteensopivuuden varmistaminen Python 3.6:n kanssa, alustava arkkitehtuurikuvaus, koodin ja dokumentoinnin hiomista, lisää testejä
 26.4.| 2 | koordinaattien syöttöohjelman koodaus
+27.4.| 3 | syöttöohjelman testaus, sekvenssikaavio, koodin siistimistä
 **yht.** | 17 |

@@ -34,6 +34,16 @@ Sovelluksen voi suorittaa komennolla:
 poetry run invoke start
 ```
 
+### Koodinaattien syöttö
+
+Voit luoda tiedoston, joka sisältää kaupunkien koordinaatit, syöttösovelluksella, joka käynnistyy komennolla:
+
+```bash
+poetry run invoke build
+```
+
+Syötä ensin haluttu kaupunkien määrä. Tämän jälkeen syötä kaupungin koordinaatit (2 kpl) erotettuna välilyönnillä (eli muodossa "XX YY", jossa XX ja YY ovat liukulukuja).
+
 ### Testaus
 
 Testit voi suorittaa komennolla:
