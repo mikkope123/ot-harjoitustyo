@@ -10,6 +10,8 @@ Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yks
 
 [Arkkitehtuuri](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Release 1](https://github.com/mikkope123/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Asennus
 
 1. Asenna riippuvuudet komennolla:
