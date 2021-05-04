@@ -1,14 +1,22 @@
 class File_builder:
+    """Class for creating input file for TSP solver."""
+
     def __init__(self, outputfile: str):
+        """Class constructor for File_builder class.
+
+        Args:
+            outputfile: The name of the input file to be created."""
         self.output = outputfile
         self.cities = []
 
     def build(self):
+        """Builds the input file."""
         n_cities = self.read_number_of_cities()
         self.read_city_coordinates(n_cities)
         self.write_to_file(self.output)
 
     def read_number_of_cities(self):
+        """Reads the number of cities to be included in the input file."""
         while True:
             n_cities = input("Give the number of cities: ")
             try:

@@ -3,6 +3,7 @@ import sys
 from solver.solver import Route
 
 class UI:
+    """Class for user interface for TSP solver"""
     def __init__(self, root, route):
         self._root = root
         self.route = route
