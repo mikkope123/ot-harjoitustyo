@@ -1,5 +1,7 @@
 from city.city import City
 from solver.solver import Route
+from UI.UI import UI
+from tkinter import Tk, ttk
 
 result_file = "results/route"
 
@@ -12,11 +14,10 @@ route = Route()
 for city in cities:
     route.add_city(city)
 
-print("Cities to visit:")
-route.print_cities()
-print()
-route.solve()
-route.print_route()
-route.print_to_file(result_file)
-route.plot()
-print("Solution printed to the file "+ str(result_file))
+window = Tk()
+window.title("TSP solver")
+
+ui = UI(window, route)
+ui.start()
+
+window.mainloop()

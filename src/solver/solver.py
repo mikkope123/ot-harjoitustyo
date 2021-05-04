@@ -2,30 +2,58 @@ import matplotlib.pyplot as plt
 from city.city import City
 
 class Route:
+    """Class that represents the route that the salesman follows.
+
+    Attribues:
+        cities: Cities to visit
+        route: visited cities in order of visits
+        route_length: the distance traveled"""
+
     def __init__(self):
+        """Class constructor that creates an empty route."""
         self.__cities = [] #should be a set?
         self.__route = []
         self.__route_length = 0
 
     def add_city(self, city: City):
+        """Adds a city to the list of cities to visit (self.__cities).
+
+        Args:
+            city: A city class object.
+
+        Returns:
+            True if the city was added to the list of cities to visit."""
         self.__cities.append(city)
         return True
 
     def add_to_route(self, city: City):
+        """Adds city to the route of the salesman.
+
+        Args:
+            city: A city class object.
+
+        Returns:
+            True if city was added to the route."""
         self.__route.append(city)
         return True
 
     def print_cities(self):
+        """Prints the list of cities to visit on the terminal."""
         for city in self.__cities:
             print(city)
 
     def print_route(self): #reduntant code!!!!!
+        """Prints the current route on the terminal."""
         print("Solved route:")
         for city in self.__route:
             print(city)
         print(f"Route length: {self.__route_length:.2f} units")
 
     def print_to_file(self, filename):
+        """Saves the current route to a file.
+
+        Args:
+            filename: The file in which the route will be saved."""
         f = open(filename, "w")
         for city in self.__route:
             coordinates = city.get_coordinates()
@@ -34,6 +62,10 @@ class Route:
         f.close()
 
     def solve(self):
+        """Calculates the approximation of the shortest route through all the given cities to visit.
+
+        Returns:
+            The length of the approximated route."""
         #choose a starting city
         current = self.__cities[0]
         first = current
@@ -52,6 +84,7 @@ class Route:
 
 
     def plot(self):
+        """Plots the current route and saves it as an image."""
         x = []
         y = []
         for city in self.__route:
