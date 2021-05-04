@@ -1,5 +1,9 @@
 # Arkkitehtuurikuvaus
 
+## Rakenne
+
+Sovelluksen rakenne noudattaa kaksitasoista kerrosarkkitehtuuria.
+
 ## Sovelluslogiikka
 
 ![Luokkakaavio](./kuvat/luokkakaavio.png)

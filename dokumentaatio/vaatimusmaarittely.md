@@ -18,6 +18,7 @@ Alustavasti sovelluksessa on tarkoitus olla kaksi tai kolme näkymää. Syöttö
 * Tulos esitetään graafisesti. **tallennus kuvatiedostoon tehty**
 * Tulos tallennetaan tiedostoon. **tehty**
 * Koordinaattien etäisyys lasketaan [euklidisena etäisyytenä](https://fi.wikipedia.org/wiki/Euklidinen_metriikka). **tehty**
+* Graafinen käyttöliittymä **aloitettu**
 
 
 ### Jatkokehitysideoita

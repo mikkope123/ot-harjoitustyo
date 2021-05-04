@@ -53,13 +53,17 @@ class Route:
         """Saves the current route to a file.
 
         Args:
-            filename: The file in which the route will be saved."""
+            filename: The file in which the route will be saved.
+
+        Returns:
+            True if writing was succesful"""
         f = open(filename, "w")
         for city in self.__route:
             coordinates = city.get_coordinates()
             coordinate_string = str(coordinates[0]) + " " + str(coordinates[1]) + "\n"
             f.write(str(coordinate_string))
         f.close()
+        return True
 
     def solve(self):
         """Calculates the approximation of the shortest route through all the given cities to visit.
@@ -84,7 +88,10 @@ class Route:
 
 
     def plot(self):
-        """Plots the current route and saves it as an image."""
+        """Plots the current route and saves it as an image.
+
+        Returns:
+            True if the image is succesfully created."""
         x = []
         y = []
         for city in self.__route:
@@ -93,3 +100,4 @@ class Route:
             y.append(coordinates[1])
         plt.plot(x,y)
         plt.savefig("results/route.png")
+        return True
