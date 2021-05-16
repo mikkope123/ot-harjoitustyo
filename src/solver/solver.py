@@ -26,33 +26,16 @@ class Route:
         self.__route.append(city)
         return True
 
-    def print_cities(self):
-        """Prints the list of cities to visit on the terminal."""
-        for city in self.__cities:
-            print(city)
-
     def print_route(self):
-        """Prints the current route on the terminal."""
+        """Prints the current route on the terminal.
+
+        Returns:
+            True if successful"""
         print("Solved route:")
         for city in self.__route:
             print(city)
         print(f"Route length: {self.__route_length:.2f} units")
-
-    """"def print_to_file(self, filename):
-        ""Saves the current route to a file.
-
-        Args:
-            filename: The file in which the route will be saved.
-
-        Returns:
-            True if writing was succesful""
-        f = open(filename, "w")
-        for city in self.__route:
-            coordinates = city.get_coordinates()
-            coordinate_string = str(coordinates[0]) + " " + str(coordinates[1]) + "\n"
-            f.write(str(coordinate_string))
-        f.close()
-        return True"""
+        return True
 
     def solve(self):
         """Calculates the approximation of the shortest route through all the given cities to visit.
@@ -75,4 +58,5 @@ class Route:
         return self.__route_length
 
     def get_route(self):
+        """Returns the current route."""
         return self.__route
