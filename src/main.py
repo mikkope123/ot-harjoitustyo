@@ -2,22 +2,21 @@ from city.city import City
 from solver.solver import Route
 from UI.UI import UI
 from tkinter import Tk, ttk
+from fileio.fileio import File_reader
 
-result_file = "results/route"
 
-cities = []
-with open("data/data.txt") as data:
-    for line in data:
-        raw_split = line.split()
-        cities.append(City(float(raw_split[0]), float(raw_split[1])))
-route = Route()
-for city in cities:
-    route.add_city(city)
+if __name__ == "__main__":
+    result_file = "results/route"
+    input_file = "data/data.txt"
+    reader = File_reader(input_file)
+    cities = reader.read_file()
 
-window = Tk()
-window.title("TSP solver")
+    route = Route(cities)
 
-ui = UI(window, route)
-ui.start()
+    window = Tk()
+    window.title("TSP solver")
 
-window.mainloop()
+    ui = UI(window, route)
+    ui.start()
+
+    window.mainloop()

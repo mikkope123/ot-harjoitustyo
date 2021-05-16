@@ -42,7 +42,7 @@ class City:
         Returns:
             A tuple consisting of the nearest city and the distance from self to there."""
         nearest_city = None
-        shortest_distance = 10**9 #find a better way to do this
+        shortest_distance = math.inf
         for city in other_cities:
             r = self.distance(city)
             if r < shortest_distance:

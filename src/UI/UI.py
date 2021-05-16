@@ -1,6 +1,7 @@
 from tkinter import Tk, ttk
 import sys
 from solver.solver import Route
+from fileio.fileio import Output_handler
 
 class UI:
     """Class for user interface for TSP solver"""
@@ -14,10 +15,14 @@ class UI:
         solve.pack()
 
     def _start_solve(self):
+        image_file = "results/route.png"
+        result_file = "results/route"
         self.route.solve()
         self.route.print_route()
-        self.route.print_to_file(self.result_file)
-        self.route.plot()
+        route = self.route.get_route()
+        outputs = Output_handler(route, image_file, result_file)
+        outputs.plot()
+        outputs.print_to_file()
         sys.exit()
 
 
