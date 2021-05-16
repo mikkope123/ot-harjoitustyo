@@ -2,7 +2,7 @@
 
 Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yksi kerrallaan siten Nearest neighbor -algoritmilla, eli valitsemalla viimeiseksi vierailusta kaupungista lähimpänä oleva kaupunki seuraavaksi reitille.
 
-### Dokumentaatio
+## Dokumentaatio
 
 [Käyttöohje](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
@@ -14,9 +14,13 @@ Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yks
 
 [Työaikakirjanpito](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
+## Releaset
+
 [Release 1](https://github.com/mikkope123/ot-harjoitustyo/releases/tag/viikko5)
 
 [Release 2](https://github.com/mikkope123/ot-harjoitustyo/releases/tag/viikko6)
+
+[Release 3](https://github.com/mikkope123/ot-harjoitustyo/releases/tag/lopullinen)
 
 ## Asennus
 
