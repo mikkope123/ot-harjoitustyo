@@ -16,6 +16,7 @@ Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yks
 
 ## Releaset
 
+
 [Release 1](https://github.com/mikkope123/ot-harjoitustyo/releases/tag/viikko5)
 
 [Release 2](https://github.com/mikkope123/ot-harjoitustyo/releases/tag/viikko6)
