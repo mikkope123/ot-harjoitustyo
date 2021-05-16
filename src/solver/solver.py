@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from city.city import City
 
 class Route:
@@ -48,13 +47,13 @@ class Route:
         self.add_to_route(current)
         self.__cities.remove(current)
         while len(self.__cities) != 0:
-            next, dist = current.find_nearest(self.__cities)
-            self.add_to_route(next)
-            self.__route_length += dist #add this to add_to_route
-            self.__cities.remove(next) #ditto
-            current = next
+            next_city, dist = current.find_nearest(self.__cities)
+            self.add_to_route(next_city)
+            self.__route_length += dist
+            self.__cities.remove(next_city)
+            current = next_city
         self.add_to_route(first)
-        self.__route_length += current.distance(first) #what if only one city
+        self.__route_length += current.distance(first)
         return self.__route_length
 
     def get_route(self):

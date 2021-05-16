@@ -1,7 +1,7 @@
 import math
 
 class City:
-    """A class representing a city on the salesman's route.': 
+    """A class representing a city on the salesman's route.':
 
     Attributes:
         x1, x2: cartesian coordinates representing the location of the city on the map
@@ -11,7 +11,8 @@ class City:
         """Class constructor that creates a new city
 
         Args:
-            self.__x1, self.__x2: cartesian coordinates representing the location of the city on the map"""
+            self.__x1, self.__x2: cartesian coordinates representing
+                the location of the city on the map"""
         self.__x1 = x1
         self.__x2 = x2
 

@@ -1,6 +1,5 @@
-from tkinter import Tk, ttk, Radiobutton, StringVar, Label
+from tkinter import ttk, Radiobutton, StringVar, Label
 import sys
-from solver.solver import Route
 from fileio.fileio import Output_handler
 
 class UI:
@@ -16,12 +15,12 @@ class UI:
         label = Label(self._root)
         label.config(text= "Select the format fo the result image (default: png)")
         label.pack()
-        r1 = Radiobutton(self._root, text="png", variable = self.output_type, value="png")
-        r2 = Radiobutton(self._root, text="pdf", variable = self.output_type, value="pdf")
-        r3 = Radiobutton(self._root, text="svg", variable = self.output_type, value="svg")
-        r1.pack()
-        r2.pack()
-        r3.pack()
+        format1 = Radiobutton(self._root, text="png", variable = self.output_type, value="png")
+        format2 = Radiobutton(self._root, text="pdf", variable = self.output_type, value="pdf")
+        format3 = Radiobutton(self._root, text="svg", variable = self.output_type, value="svg")
+        format1.pack()
+        format2.pack()
+        format3.pack()
         solve = ttk.Button(master=self._root, text="Solve", command=self._start_solve)
         solve.pack()
 
@@ -39,5 +38,3 @@ class UI:
         outputs.print_to_file()
         outputs.plot()
         sys.exit()
-
-

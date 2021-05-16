@@ -4,13 +4,15 @@ Sovellus antaa ratkaisun kauppamatkustajan ongelmaan. Kaupunkeja lisätään yks
 
 ### Dokumentaatio
 
-[Vaatimusmäärittely](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[Käyttöohje](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
-[Työaikakirjanpito](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+[Vaatimusmäärittely](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Arkkitehtuuri](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[Käyttöohje](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+[Testausdokumentti](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+
+[Työaikakirjanpito](https://github.com/mikkope123/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
 [Release 1](https://github.com/mikkope123/ot-harjoitustyo/releases/tag/viikko5)
 
@@ -74,10 +76,10 @@ Koodin laaduntarkistuksen voi suorittaa komennolla:
 poetry run invoke lint
 ```
 
-Koodin laatukriteerit on määrätty tiedostossa .pylintrc.
+Koodin laatukriteerit on määrätty tiedostossa [.pylintrc](https://github.com/mikkope123/ot-harjoitustyo/blob/master/.pylintrc).
 
 ## Syötteet ja tulosteet
 
-Sovellus lukee syötteen tiedostosta /data/data.txt. Tiedostossa on koordinaatit jokaiselle reitin kaupungille omalla rivillään. Tällä hetkellä ohjelma ei vielä tarkasta tiedoston oikeaa muotoa.
+Sovellus lukee syötteen tiedostosta /data/data.txt. Tiedostossa on koordinaatit jokaiselle reitin kaupungille omalla rivillään. Ohjelma ei vielä tarkasta tiedoston oikeaa muotoa.
 
-Sovellus tulostaa ratkaistun reitin sekä terminaaliin, että kahteen tiedostoon, jotka sijaitsevat /results-kansiossa. Tekstitiedosto route sisältää kaupunkien koordinaatit siinä järjestyksessä kuin niissä ratkaistussa reitissä vieraillaan, palaten takaisin lähtökaupunkiin. Kuvatiedosto route.png sisältää graafisen esityksen reitistä.
+Sovellus tulostaa ratkaistun reitin sekä terminaaliin, että kahteen tiedostoon, jotka sijaitsevat /results-kansiossa. Tekstitiedosto route sisältää kaupunkien koordinaatit siinä järjestyksessä kuin niissä ratkaistussa reitissä vieraillaan, palaten takaisin lähtökaupunkiin. Kuvatiedosto route.png (tai .pdf/.svg, riippuen valinnasta) sisältää graafisen esityksen reitistä.
