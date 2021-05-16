@@ -12,4 +12,5 @@ päivä | aika | mitä tein
 27.4.| 3 | syöttöohjelman testaus, sekvenssikaavio, koodin siistimistä
 3.5. | 1 | Docstring-dokumentointia, alustavaa käyttöliittymää
 4.5. | 3 | Koodin järkevöittämistä, käyttöliittymää, dokumentointia
-**yht.** | 22 |
+16.5.| 9 | Koodin järkevöittämistä ja täydentämistä, testausta, dokumentointia
+**yht.** | 31 |
