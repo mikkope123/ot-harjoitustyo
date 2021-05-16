@@ -2,7 +2,15 @@
 
 ## Rakenne
 
-Sovelluksen rakenne noudattaa kaksitasoista kerrosarkkitehtuuria.
+Sovelluksen rakenne noudattaa kolmitasoista kerrosarkkitehtuuria. Koodin pakkausrakenne on kuvattu alla.
+
+![Luokkakaavio](./kuvat/luokkakaavio.png)
+
+Pakkaus UI sisältää käyttöliittymään liittyvän koodin, solver-pakkaus sisältää ratkaisualgoritmin kauppamatkustajan ongelmalle ja sekä siihen olennaisesti liittyvää koodia, city-pakkaus sisältää yksittäisiä kaupunkeja koskevan koodin sekä etäisyyksien vertailufunktion ja fileio-pakkaus sisältää syöttö- ja tulostiedoston käsittelyä koskevan koodin. Pakkaus build sisältää syöttötiedon rakennussovellukseen liittyvän koodin ja on itsenäinen muista pakkauksista.
+
+## Käyttöliittymä
+
+Syöttötiedoston rakennussovelluksella ja ratkaisinsovelluksella on omat käyttöliittymänsä. Ratkaisinsovelluksen käyttöliittymä on pyritty eristämään sovelluslogiikasta parhaan mukaan.
 
 ## Sovelluslogiikka
 
@@ -10,8 +18,16 @@ Sovelluslogiikka rakentuu luokkien City, Route, File\_reader ja Output\_handler 
 
 ![Luokkakaavio](./kuvat/luokkakaavio.png)
 
-## Sekvenssikaavio
+## Tietojen pysyväistallennus
 
-Sekvenssikaavio kuvaa nykyistä kaupunkia (city1) lähimpänä olevan kaupungin lisäämistä reitille seuraavaksi.
+Pakkauksen "fileio" luokat "File\_reader" ja "Output\_handler" käsittelevät tiedostoja. "File\_reader"-luokka lukee syöttötiedoston. "Output\_handler"-luokka luo ratkaistusta reitista graafin ja tallentaa reitin tiedostoon.
+
+## Päätoiminnallisuus
+
+Ratkaisinsovellus laskee approksimoidun ratkaisun kauppamatkustajan ongelmaa lähimmän naapurin algoritmilla. Alla oleva sekvenssikaavio kuvaa nykyistä kaupunkia (city1) lähimpänä olevan kaupungin lisäämistä reitille seuraavaksi.
 
 ![Sekvenssikaavio](./kuvat/sekvenssikaavio.png)
+
+## Ohjelman rakenteeseen jääneet heikkoudet
+
+Sovellus on tarkoitettu lähinnä pienien ongelmien ratkaisuun, eikä käyttäjälle ei anneta tietoa laskennan etenemisestä. Toinen merkittävä ongelma on, että lähimmän naapurin antaa harvoin optimaalisen reitin.
