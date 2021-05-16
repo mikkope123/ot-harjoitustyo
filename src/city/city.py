@@ -1,7 +1,7 @@
 import math
 
 class City:
-    """Class: 
+    """A class representing a city on the salesman's route.': 
 
     Attributes:
         x1, x2: cartesian coordinates representing the location of the city on the map
@@ -51,8 +51,7 @@ class City:
         return (nearest_city, shortest_distance)
 
     def get_coordinates(self):
-        """
-        A method to get the cartesian coordinates of the city.
+        """A method to get the cartesian coordinates of the city.
 
         Returns:
             Cartesian coordinates of the city."""

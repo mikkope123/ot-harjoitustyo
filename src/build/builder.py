@@ -27,8 +27,8 @@ class File_builder:
                 print("The number of cities must be an integer.")
 
     def read_city_coordinates(self, n_cities: int):
+        """Reads the city coordinates inputs from the user and adds them to the list of cities."""
         coordinates_read = 0
-        #cities = []
         while coordinates_read < n_cities:
             coordinates = input(f"Give the coordinates of city {coordinates_read+1} (separated by space): ")
             coord_split = coordinates.split()
@@ -39,13 +39,14 @@ class File_builder:
                     coordinates_read += 1
                 else:
                     pass
-
         return self.cities
 
     def two_coordinates(self, coordinates: list):
+        """Checks if the input has exactly two coordinates."""
         return len(coordinates) == 2
 
     def proper_coordinates(self, coordinates: list):
+        """Checks if the input has valid coordinates and the coordinates have not been inputted yet."""
         try:
             x = float(coordinates[0])
             y = float(coordinates[1])
@@ -59,6 +60,10 @@ class File_builder:
             return False
 
     def write_to_file(self, output: str):
+        """Writes the input file.
+
+        Args:
+            output: The name of the input file."""
         try:
             f=  open(output, "w")
             for city in self.cities:

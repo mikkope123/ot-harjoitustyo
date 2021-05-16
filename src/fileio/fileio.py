@@ -2,6 +2,10 @@ import matplotlib.pyplot as plt
 from city.city import City
 
 class File_reader:
+    """Input file reader class.
+
+    Args:
+        filename = the name of the input file to be read"""
     def __init__(self, filename):
         self.file = filename
         self.__cities = []
@@ -14,6 +18,13 @@ class File_reader:
         return self.__cities
 
 class Output_handler:
+    """Class for creating the output files.
+
+    Args:
+        final_route = a list of cities
+        image_file = the name of the result image file
+        result_file = the name of the result file
+        output_type = the format of the image file"""
     def __init__(self, final_route, image_file, result_file, output_type):
         self.image_file = image_file
         self.result_file = result_file

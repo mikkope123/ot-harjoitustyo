@@ -12,6 +12,7 @@ class UI:
         self.output_type = StringVar()
 
     def start(self):
+        """Creates the UI"""
         label = Label(self._root)
         label.config(text= "Select the format fo the result image (default: png)")
         label.pack()
@@ -25,6 +26,7 @@ class UI:
         solve.pack()
 
     def _start_solve(self):
+        """Calls for solver and output algorithms."""
         output_format = str(self.output_type.get())
         if output_format == "":
             output_format = "png"
