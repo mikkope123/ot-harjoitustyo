@@ -8,21 +8,25 @@ Sovellus antaa approksimoidun ratkaisun [kauppamatkustajan ongelman](https://fi.
 
 Käyttäjiä on yksi.
 
-### Käyttöliittymäluonnos
+### Käyttöliittymä
 
-Alustavasti sovelluksessa on tarkoitus olla kaksi tai kolme näkymää. Syöttönäkymässä käyttäjä voi antaa verkon koordinaatit joko manuaalisesti tai tiedostossa. Ratkaistu reitti näytetään tulosnäkymässä. Sovellukseen tulee mahdollisesti laskentanäkymä, jossa käyttäjä näkee laskennan etenemisen. Sovellus aukeaa syöttönäkymään, josta syötteen jälkeen voi siirtyä laskentaan. Laskennan jälkeen sovellus siirtyy automaattisesti tulosnäkymään.
+Sovelluksessa on kaksi toisistaan itsenäistä osaa: syöttötiedoston rakennussovellus ja ratkaisinsovellus. Rakennussovelluksessa on tekstikäyttöliittymä, joka kysyy ensin kuinka monta kaupunkia käyttäjä haluaa syöttää ja tämän jälkeen jokaisen kaupungin koordinaatit. Syöttötiedostoa voi muokata myös manuaalisesti tekstieditorilla, mutta ratkaisinsovellus ei tarkista syöttötiedoston muotoa.
+
+Ratkaisinsovelluksessa on graafinen käyttöliittymä, josta voi valita tulosgraafin tallennusmuodon. Ratkaisin aloittaa laskennan painamalla käyttöliittymän "Solve"-nappia. Laskennan päätteeksi ohjelma tulostaa ratkaistun reitin terminaaliin.
 
 ### Perusversion tarjoama toiminnallisuus
 
-* Syötteen voi antaa manuaalisesti yksittäisiä koordinaatteja syöttämällä tai antamalla koordinaatistot tiedostossa **tehty**
-* Tulos esitetään graafisesti. **tallennus kuvatiedostoon tehty**
-* Tulos tallennetaan tiedostoon. **tehty**
-* Koordinaattien etäisyys lasketaan [euklidisena etäisyytenä](https://fi.wikipedia.org/wiki/Euklidinen_metriikka). **tehty**
-* Graafinen käyttöliittymä **aloitettu**
+* Syötteen voi antaa manuaalisesti yksittäisiä koordinaatteja syöttämällä tai antamalla koordinaatistot tiedostossa
+* Tuloksesta luodaan kuvatiedosto.
+* Tulos tallennetaan tiedostoon.
+* Koordinaattien etäisyys lasketaan [euklidisena etäisyytenä](https://fi.wikipedia.org/wiki/Euklidinen_metriikka).
+* Reitti ratkaistaan [lähimmän naapurin -algoritmilla](https://en.wikipedia.org/wiki/Nearest_neighbour_algorithm).
 
 
 ### Jatkokehitysideoita
 
-Perusversion jälkeen sovellusta täydennetään 
+Tätä perusversiota voisi parantaa muun muassa:
 * eri ratkaisualgoritmeja lisäämällä.
 * mahdollistamalla epäeuklidiset verkot.
+* luomalla syöttötiedoston rakennussovellukseen graafisen käyttöliittymän.
+* antamalla käyttäjän määrittää syöttö- ja tulostiedostojen nimet ja sijainnin.
